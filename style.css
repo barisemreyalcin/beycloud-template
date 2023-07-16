@@ -39,7 +39,6 @@ a {
 
 /* NAVBAR */
 .navbar {
-    background-color: var(--medium-color);
     height: 10rem;
 }
 
@@ -81,7 +80,6 @@ a {
 /* SHOWCASE */
 .showcase {
     height: 40rem;
-    background-color: var(--medium-color);
     color: var(--light-color);
     position: relative;
 }
@@ -174,4 +172,35 @@ input::placeholder {
 
 .stats i {
     color: var(--primary-color);
+}
+
+/* CLI */
+.cli .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid-container > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 60rem;
+    border-radius: .8rem;
+}
+
+.cli .card {
+    box-shadow: rgba(25, 25, 25, .3) 0px 0px 8px 0px;
+}
+
+.cli h4 {
+    font-weight: 300;
+}
+
+/* CLOUD */
+.cloud .grid-container {
+    grid-template-columns: 2fr 1fr;
+}
+
+.cloud h2 {
+    font-size: 3.6rem;
+    font-weight: 300;
 }
