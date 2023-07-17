@@ -103,12 +103,10 @@ a {
 
 .showcase h1 {
     font-size: 3.8rem;
-    font-weight: 300;
 }
 
 .showcase h2 {
     color: var(--secondary-color);
-    font-weight: 300;
 }
 
 .showcase p {
@@ -191,10 +189,6 @@ input::placeholder {
     box-shadow: rgba(25, 25, 25, .3) 0px 0px 8px 0px;
 }
 
-.cli h4 {
-    font-weight: 300;
-}
-
 /* CLOUD */
 .cloud .grid-container {
     grid-template-columns: 2fr 1fr;
@@ -202,5 +196,24 @@ input::placeholder {
 
 .cloud h2 {
     font-size: 3.6rem;
-    font-weight: 300;
+}
+
+/* LANGUAGES */
+.languages .flex-container {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    position: relative;
+    box-shadow: rgba(25, 25, 25, .4) 0px 0px 10px 0px;
+    margin: .8rem;
+    transition: all .3s;
+}
+
+.languages .card:hover {
+    transform: translateY(-1rem);
+}
+
+.languages .card img {
+    width: 10rem;
 }
