@@ -218,6 +218,16 @@ input::placeholder {
     width: 10rem;
 }
 
+/* FEATURES */
+.features-header .features-text h1 {
+    font-size: 3.8rem;
+}
+
+.features-header img {
+    width: 25rem;
+    justify-self: flex-end;
+} 
+
 /* FOOTER */
 .footer nav a:hover {
     color: var(--secondary-color);
@@ -237,12 +247,13 @@ input::placeholder {
     margin-bottom: 1.5rem;
     width: 12rem;
     border-radius: 50%;
-    transition:  .3s all ease-in-out;
+    transition:  .3s all;
+    border: 4px solid var(--light-color);    
 }
 
 .footer .footer-logo img:hover {
     border: 4px solid var(--secondary-color);    
-    transform: scale(1.12);
+    transform: scale(1.05);
 }
 
 /* RESPONSIVE */
