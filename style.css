@@ -36,7 +36,7 @@ img {
 a {
     color: var(--light-color);
 }
-
+/* HOME PAGE */
 /* NAVBAR */
 .navbar {
     height: 10rem;
@@ -102,7 +102,7 @@ a {
 }
 
 .showcase h1 {
-    font-size: 3.8rem;
+    font-size: 4.8rem;
 }
 
 .showcase h2 {
@@ -195,7 +195,7 @@ input::placeholder {
 }
 
 .cloud h2 {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
 }
 
 /* LANGUAGES */
@@ -219,14 +219,25 @@ input::placeholder {
 }
 
 /* FEATURES */
+/* FEATURE HEADER */
 .features-header .features-text h1 {
-    font-size: 3.8rem;
+    font-size: 4.8rem;
 }
 
 .features-header img {
     width: 25rem;
     justify-self: flex-end;
-} 
+}
+
+/* SUB HEADER */
+.features-sub-header img {
+    width: 30rem;
+    justify-self: flex-end;
+}
+
+.features-sub-header h2 {
+    font-size: 3.5rem;
+}
 
 /* FOOTER */
 .footer nav a:hover {
