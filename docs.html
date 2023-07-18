@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <title>bey.cloud | Cloud Hosting for Everyone</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar bg-medium">
+        <div class="container flex-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="features.html">Features</a>
+                </li>
+                <li class="nav-link">
+                    <a href="docs.html">Docs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <section class="docs-header bg-medium py-4">
+        <div class="container grid-container">
+            <div class="docs-text">
+                <h1 class="fw-300">Docs</h1>
+                <p>Learn how to work with <strong>bey.cloud</strong> platform.</p>
+            </div>
+            <img src="img/paper.png" alt="">
+        </div>
+    </section>
+
+    <!-- docs-main -->
+    <div class="docs-main my-4">
+        <div class="container grid-container">
+            <div class="card bg-light p-3">
+                <h3 class="my-1 fw-300">Essentials</h3>
+                <nav  class="mb-4">
+                    <ul>
+                        <li class="active"><a href="#">Introduction</a></li>
+                        <li><a href="#">About bey.cloud</a></li>
+                        <li><a href="#">Installation</a></li>
+                    </ul>
+                </nav>
+                <h3 class="my-1 fw-300">Deployment</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Setting up a container</a></li>
+                        <li><a href="#">Using the CLI</a></li>
+                        <li><a href="#">Managing resources</a></li>
+                        <li><a href="#">Upgrade & downgrade</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card">
+                <h2 class="fw-300 my-1 text-secondary">Introduction</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum beatae, quisquam repellendus praesentium est, ut ex autem tempora accusantium similique doloremque laborum vitae ducimus voluptates omnis aut voluptas enim aspernatur.</p>
+
+                <div class="alert alert-success my-1">
+                    <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, rem!
+                </div>
+
+                <h3 class="fw-300 mt-3 text-secondary">Install CLI</h3>
+                <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt obcaecati natus tempore ab voluptas blanditiis error et at. Expedita.</p>
+                <a href="#" class="btn btn-primary mb-2">Install CLI</a>
+
+                <h3 class="fw-300 my-1 text-secondary">Requirements</h3>
+                <ul>
+                    <li>Windows 10, MAC OSX, Linux</li>
+                    <li class="mb-2">Node.js v12 or higher</li>
+                </ul>
+
+                <h3 class="fw-300 my-1 text-secondary">Install</h3>
+                <p>MAC (Homebrew)</p>
+                <pre class="my-1"><code>$ brew install beycloud-cli</code></pre>
+                <p>Npm</p>
+                <pre class="my-1"><code>$ npm install beycloud-cli</code></pre>
+                <p>Yarn</p>
+                <pre class="my-1"><code>$ yarn install beycloud-cli</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-4 bg-medium py-4 text-center">
+        <div class="container grid-container grid-container-3">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <p>Copyright &copy; 2023</p>
+            </div>
+            <nav class="footer-navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

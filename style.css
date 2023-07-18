@@ -7,35 +7,9 @@
     --dark-color: #191919;
     --medium-color: #2D4356;
     --light-color: #FDFDFD;
+    --success-color: #4E944F;
 }
 
-/* GENERAL */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
-html {
-    font-size: 10px;
-}
-
-body {
-    font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    color: var(--dark-color);
-}
-
-img {
-    width: 100%;
-}
-
-a {
-    color: var(--light-color);
-}
 /* HOME PAGE */
 /* NAVBAR */
 .navbar {
@@ -224,7 +198,9 @@ input::placeholder {
     font-size: 4.8rem;
 }
 
-.features-header img {
+.features-header img,
+.docs-header img {
+    background-color: var(--medium-color);
     width: 25rem;
     justify-self: flex-end;
 }
@@ -256,6 +232,48 @@ input::placeholder {
 .features-main .card i {
     margin-right: 2.2rem;
     color: var(--secondary-color);
+}
+
+/* DOCS */
+/* HEADER */
+.docs-header .docs-text h1 {
+    font-size: 4.8rem;
+}
+.docs-header img {
+    background-color: var(--medium-color);
+}
+
+/* MAIN */
+.docs-main .grid-container {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.docs-main nav li {
+    padding: .5rem 0;
+    border-bottom: 1px dashed var(--primary-color);
+    transition: all .3s;
+}
+
+.docs-main nav li.active > *:first-child {
+    color: var(--secondary-color);
+}
+
+.docs-main nav li.active {
+    border-bottom: 1px dashed var(--secondary-color);}
+
+
+.docs-main nav li:hover {
+    border-bottom: 1px dashed var(--secondary-color);
+}
+.docs-main nav li:hover a {
+    color: var(--secondary-color);
+}
+
+.docs-main .card nav a {
+    color: var(--primary-color);
+    transition: all .3s;
 }
 
 /* FOOTER */
