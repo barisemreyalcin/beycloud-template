@@ -75,6 +75,10 @@
     overflow: visible;
 }
 
+.showcase-text {
+    animation: fromLeft .8s ease-in;
+}
+
 .showcase h1 {
     font-size: 4.8rem;
 }
@@ -95,6 +99,7 @@
     width: 40rem;
     justify-self: flex-end;
     color: var(--medium-color);
+    animation: fromRight .8s ease-in;
 }
 
 .showcase-form .form-control {
@@ -304,6 +309,40 @@ input::placeholder {
     transform: scale(1.05);
 }
 
+/* ANIMATIONS */
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* RESPONSIVE */
 @media(max-width: 992px) {
     .showcase .showcase-form {
@@ -342,6 +381,10 @@ input::placeholder {
     }
     .showcase .showcase-text {
         text-align: center;
+        animation: fromTop .8s ease-in;
+    }
+    .showcase .showcase-form {
+        animation: fromBottom .8s ease-in;
     }
     .showcase .grid-container,
     .grid-container-3 {
